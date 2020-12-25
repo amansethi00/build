@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap");
+:root {
+  font-family: "Recursive", sans-serif;
+}
+html {
+  background: #ff8008; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffc837,
+    #ff8008
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffc837,
+    #ff8008
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#hero {
+  width: 50%;
+  height: 20rem;
+  /* width: 100%; */
+  margin-bottom: 1rem;
+}
+#btn {
+  margin-bottom: 2rem;
+  background: #ff8008;
+}
+input {
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+#container {
+  max-width: 25rem;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 10px 10px 15px 10px #ffc837;
+}
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 10px;
+  float: right;
+  /* font-style: italic; */
+  /* background-color: lightgray; */
+}
+#bill-amt {
+  margin-left: 3rem;
+}
