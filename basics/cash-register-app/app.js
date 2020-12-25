@@ -2,6 +2,19 @@ const billAmt = document.querySelector("#bill-amt");
 const cashGiven = document.querySelector("#cash-given");
 const output = document.querySelector("#output");
 const btn = document.querySelector("#btn");
+const btn1 = document.querySelector("#btn1");
+const cash = document.querySelector("#cash")
+btn1.addEventListener("click",showCash);
+function showCash(){
+    var billAmtValue = billAmt.value;
+    if(billAmtValue===""){
+        alert("Please enter correct bill Amount");
+    }
+    else{
+        cash.style.display = "block";
+        btn1.style.display = "none";
+    }
+}
 btn.addEventListener("click",myFunction);
 
 let changes ={
@@ -15,16 +28,19 @@ let changes ={
 };
 const arr = Object.keys(changes).reverse();
 
-function changeReturn(billValue,cashValue){
 
-}
 function myFunction(){
     output.innerHTML="";
-    let billAmtValue = billAmt.value;
-    if(billAmtValue === null){
-        alert("No bill value found");
+    var billAmtValue = billAmt.value;
+    if(billAmtValue===""){
+        alert("Please enter correct bill Amount");
     }
-    let cashGivenValue = cashGiven.value;       
+    else{
+
+     let cashGivenValue = cashGiven.value;    
+    if(cashGivenValue ===""){
+        alert("Please enter correct cash Given value")
+    }   
     let changeValue = cashGivenValue - billAmtValue;
 
     if(changeValue < 0){
@@ -40,7 +56,8 @@ function myFunction(){
         hc1.innerHTML = "Amount";
         var hc2 = h1.insertCell(1);
         hc2.innerHTML = "Quantity";
-        
+        table.style.backgroundColor ="#DBD5B5";
+        // table.style.boxShadow = "10px 10px 15px 10px #ffc837"
         for(let i=0;i<arr.length;i++){
             var r=table.insertRow(i+1);
             var c1= r.insertCell(0);
@@ -61,5 +78,11 @@ function myFunction(){
         }
         // console.log(changes);
         output.appendChild(table);
+    
+}
+
+
     }
+    
+    
 }

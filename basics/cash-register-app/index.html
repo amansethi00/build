@@ -7,19 +7,37 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <aside>
-      <div id="output"></div>
-    </aside>
     <div id="container">
       <label for="bill-amt">Enter Bill amount:</label>
-      <input type="text" id="bill-amt" name="bill-amt" /><br /><br />
-      <label for="cash-given">Cash Given by customer:</label>
-      <input type="text" id="cash-given" name="cash-given" /><br /><br />
-      <center><input type="submit" id="btn" value="Submit" /></center>
-      <br />
+      <input
+        type="text"
+        id="bill-amt"
+        name="bill-amt"
+        placeholder="in rupees"
+      /><br /><br />
+      <button id="btn1">Submit</button>
+      <div id="cash">
+        <label for="cash-given">Cash Given by customer:</label>
+        <input
+          type="text"
+          id="cash-given"
+          name="cash-given"
+          placeholder="in rupees"
+        /><br /><br />
+        <center><input type="submit" id="btn" value="Submit" /></center>
+        <br />
+      </div>
+
       <!-- <image src="./assets/coins.svg" id="hero"></image> -->
     </div>
-
+    <div id="output"></div>
+    <!-- <footer>
+      Connect socially:
+      <ul  >
+        <li>Github</li>
+        <li>Twitter </li>
+      </ul>
+    </footer> -->
     <script src="app.js"></script>
   </body>
 </html>

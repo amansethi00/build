@@ -3,17 +3,17 @@
   font-family: "Recursive", sans-serif;
 }
 html {
-  background: #ff8008; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  background: #dbd5b5; /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(
     to right,
-    #ffc837,
-    #ff8008
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
+    #2b9eb3,
+    #2b9eb3
+  ); Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(
     to right,
-    #ffc837,
-    #ff8008
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    #2b9eb3,
+    #2b9eb3
+  ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #hero {
   width: 50%;
@@ -22,8 +22,12 @@ html {
   margin-bottom: 1rem;
 }
 #btn {
-  margin-bottom: 2rem;
-  background: #ff8008;
+  /* margin-bottom: 2rem; */
+  background: #dbd5b5;
+  padding: 0.5rem;
+  font-weight: bolder;
+  border: 2px solid black;
+  /* box-shadow: 0px 0px 10px 10px #60572e; */
 }
 input {
   border: 1px solid black;
@@ -36,16 +40,18 @@ input {
   border: 1px solid black;
   border-radius: 1rem;
   padding: 1rem;
-  box-shadow: 10px 10px 15px 10px #ffc837;
+  box-shadow: 10px 10px 15px 10px #dbd5b5;
 }
-aside {
-  width: 30%;
-  padding-left: 15px;
-  margin-left: 10px;
-  float: right;
-  /* font-style: italic; */
-  /* background-color: lightgray; */
-}
+
 #bill-amt {
   margin-left: 3rem;
+}
+#output {
+  max-width: 10rem;
+  margin: auto;
+
+  padding: 1rem;
+}
+#cash {
+  display: none;
 }
