@@ -55,3 +55,10 @@ input {
 #cash {
   display: none;
 }
+#btn1 {
+  background: #dbd5b5;
+  padding: 0.5rem;
+  font-weight: bolder;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
