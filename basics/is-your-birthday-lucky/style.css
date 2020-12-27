@@ -117,3 +117,46 @@ html {
       0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
   }
 }
+.callout {
+  position: fixed;
+  bottom: 5px;
+  /* right: 0px;
+  left: 20px; */
+  /* margin-left: 20px; */
+  width: 99%;
+  max-width: 200%;
+  margin: auto;
+  border-radius: 0.5rem;
+}
+
+.callout-header {
+  padding: 5px 10px;
+  background: var(--secondary-color);
+  font-size: 30px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black;
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+.ok {
+  top: 90px;
+  font-size: 20px;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+}
