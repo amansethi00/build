@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is you birthday Lucky?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Is your birthday lucky?</h1>
+      <h2>Let's find out!!</h2>
+      <h3>Enter your birth date:</h3>
+      <input type="date" id="date" />
+      <h3>Enter your lucky number</h3>
+      <input type="number" id="number" placeholder="lucky number" />
+      <br />
+      <input type="submit" id="submit-btn" />
+    </div>
+    <div class="loader" style="display: none">Loading...</div>
+    <div class="container output" style="display: none">
+      <h2>Results</h2>
+      <p id="outputpara">
+        Please select birthday and lucky number to dislay result
+      </p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
