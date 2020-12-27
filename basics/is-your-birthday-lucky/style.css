@@ -160,3 +160,21 @@ html {
   background-color: var(--primary-color);
   border-radius: 0.5rem;
 }
+aside {
+  width: 5%;
+  /* padding-left: 15px; */
+  /* margin-left: 15px; */
+  float: right;
+  font-style: italic;
+  background-color: var(--primary-color);
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+.social li {
+  list-style: none;
+}
+.social-links {
+  height: 2rem;
+  width: 2rem;
+}
