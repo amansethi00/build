@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="nav-brand">Area of triangle</div>
+    </nav>
+    <div class="space"></div>
+    <div class="container">
+        <center>
+      <div class="small" id="heron">
+        <div class="center">Using Heron's formula</div>
+      </div>
+      <div class="small" id="base-height">
+        <div class="center">Using base and height</div>
+      </div>
+      <div class="small" id="included-angle">
+        <div class="center">
+          Using 2 sides and the included angle between them
+        </div>
+      </div>
+      <div class="small" id="equilateral-triangle"><div class="center">Equilateral Triangle</div></div>
+    </center>
+    </div>
+    <div class="space"></div>
+    <section class="section">
+      <div class="heron">
+        <h2>Using Heron's formula to calculate area of triangle</h2>
+        <span>Side a:<input type="number" id="side1" /></span>
+        <br>
+        <span>Side b:<input type="number" id="side2" /></span>
+        <br>
+        <span>Side c:<input type="number" id="side3" /></span>
+
+        <h2>Area=<span id="output1">&#8730 s(s-a)(s-b)(s-c) </span>
+        </h2>
+        <p>where s is semi perimeter,s=(a+b+c)/2</p>
+        <button id="submit-btn-heron">Calculate Area</button>
+      </div>
+      
+      <div class="base-height">
+          <h2>Area using base and height</h2>
+          <span>Base :<input type="number" id="base"></span>
+          <br>
+          
+          <span>Height:<input type="number" id="height"></span>
+          <br>
+          <h2>Area=<span id="output2"> 1/2*base*height </span>
+          </h2>
+          <button id="submit-btn-2">Calculate Area</button>
+
+      </div>
+
+      <div class="included-angle">
+        <h2>Area using 2 sides and included angle between them</h2>
+        <span>Side a:<input type="number" id="side-with-angle-1"></span>
+        <br>
+        <span>Side b:<input type="number" id="side-with-angle-2"></span>
+        <br>
+        <span id="angle">Angle between them (in degrees) c<input type="number" id="angle-between"></span>
+        <br>
+        <h2>Area=<span id="output3"> 1/2*a*b*sin c</span></h2>
+
+            <br>
+        <button id="submit-btn-3">Calculate Area</button>
+      </div>
+      <div class="equilateral-triangle">
+          <h2>Area of equilateral triangle</h2>
+          <span>Side:<input type="number" id="equilateral-side"></span>
+          <br>
+          <h2>Area =<span id="output4">(&#8730 3)a <sup>2</sup>/4 </h2>
+            <button id="submit-btn-4">Calculate Area</button>
+      </div>
+    </section>
+    <div class="space"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -5,6 +5,7 @@
 }
 body {
   margin: 0px;
+  /* color: var(--text-color); */
 }
 .navigation {
   background-color: var(--secondary-color);
@@ -13,23 +14,29 @@ body {
   height: 3rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  margin: auto;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
 }
 .nav-brand {
   font-weight: bolder;
   font-size: larger;
   padding: 0.7rem 1rem;
   margin: auto;
-  max-width: 15rem;
+  /* position: relative;
+  justify-content: center; */
+  max-width: 100%;
 }
 
 .container {
   padding: 0 1rem;
   /* background-color: var(--primary-color); */
   /* height: 25rem; */
-  width: 25rem;
+  max-width: 30rem;
   margin: auto;
   /* border: 1px solid black;
-  border-radius: 1rem; */
+    border-radius: 1rem; */
 }
 .vertical-center {
   /* -ms-transform: translateY(-50%); */
@@ -63,7 +70,51 @@ body {
   box-shadow: inset -1px 0 0;
   cursor: pointer;
 }
-a {
-  text-decoration: none;
+.section {
+  margin: auto;
+  max-width: 60%;
+  text-align: center;
+}
+#submit-btn-heron {
+  background-color: var(--secondary-color);
   color: var(--text-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: larger;
+}
+.heron {
+  display: none;
+}
+.base-height {
+  display: none;
+}
+.included-angle {
+  display: none;
+}
+.equilateral-triangle {
+  display: none;
+}
+#submit-btn-2 {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: larger;
+}
+#submit-btn-3 {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: larger;
+}
+#submit-btn-4 {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: larger;
+}
+#angle {
+  margin-left: -11rem;
 }
