@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
 :root {
   --primary-color: #94a3b8;
   --secondary-color: #1e293b;
@@ -5,6 +7,7 @@
 }
 body {
   margin: 0px;
+  font-family: "Yusei Magic", sans-serif;
 }
 .navigation {
   background-color: var(--secondary-color);
