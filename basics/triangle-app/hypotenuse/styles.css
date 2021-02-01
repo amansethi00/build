@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
+:root {
+  --primary-color: #94a3b8;
+  --secondary-color: #1e293b;
+  --text-color: white;
+}
+body {
+  margin: 0px;
+  font-family: "Yusei Magic", sans-serif;
+}
+.navigation {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 1rem;
+  height: 3rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  text-align: center;
+}
+.nav-brand {
+  font-weight: bolder;
+  font-size: larger;
+  padding: 0.7rem 1rem;
+  margin: auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.container {
+  padding: 0 1rem;
+  /* background-color: var(--primary-color); */
+  /* height: 25rem; */
+  width: 25rem;
+  margin: auto;
+  /* border: 1px solid black;
+  border-radius: 1rem; */
+}
+.vertical-center {
+  /* -ms-transform: translateY(-50%); */
+  /* transform: translateY(-50%); */
+}
+.small {
+  background-color: var(--primary-color);
+  height: 10rem;
+  width: 10rem;
+  display: inline-block;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 1rem;
+  color: var(--text-color);
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.space {
+  margin: 1rem;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.small:hover {
+  background: var(--secondary-color);
+  box-shadow: inset -1px 0 0;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.section {
+  margin: auto;
+  max-width: 60%;
+  text-align: center;
+}
